@@ -1,49 +1,19 @@
-.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
-   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
-   This text does not appear on pypi or github. It is a comment.
-
-.. image:: https://github.com/collective/cybro.usergroup.shift/actions/workflows/plone-package.yml/badge.svg
-    :target: https://github.com/collective/cybro.usergroup.shift/actions/workflows/plone-package.yml
-
-.. image:: https://coveralls.io/repos/github/collective/cybro.usergroup.shift/badge.svg?branch=main
-    :target: https://coveralls.io/github/collective/cybro.usergroup.shift?branch=main
-    :alt: Coveralls
-
-.. image:: https://codecov.io/gh/collective/cybro.usergroup.shift/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/collective/cybro.usergroup.shift
-
-.. image:: https://img.shields.io/pypi/v/cybro.usergroup.shift.svg
-    :target: https://pypi.python.org/pypi/cybro.usergroup.shift/
-    :alt: Latest Version
-
-.. image:: https://img.shields.io/pypi/status/cybro.usergroup.shift.svg
-    :target: https://pypi.python.org/pypi/cybro.usergroup.shift
-    :alt: Egg Status
-
-.. image:: https://img.shields.io/pypi/pyversions/cybro.usergroup.shift.svg?style=plastic   :alt: Supported - Python Versions
-
-.. image:: https://img.shields.io/pypi/l/cybro.usergroup.shift.svg
-    :target: https://pypi.python.org/pypi/cybro.usergroup.shift/
-    :alt: License
 
 
 =====================
 cybro.usergroup.shift
 =====================
 
-an addon which can change multiple user's to one group
+An addon which can change multiple user's to one group
 
 Features
 --------
 
-- Can be bullet points
+   - From settings, multiple user's user group can be changed.  
 
 
-Examples
---------
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+
 
 
 Documentation
@@ -79,30 +49,12 @@ and then running ``bin/buildout``
 Authors
 -------
 
-Provided by awesome people ;)
+Midhlaj.nk
 
 
-Contributors
-------------
-
-Put your name here, you deserve it!
-
-- ?
 
 
-Contribute
-----------
 
-- Issue Tracker: https://github.com/collective/cybro.usergroup.shift/issues
-- Source Code: https://github.com/collective/cybro.usergroup.shift
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
