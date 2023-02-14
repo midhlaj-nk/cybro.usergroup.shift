@@ -42,6 +42,7 @@ class UserGroupShiftControlPanel(RegistryEditForm):
         if errors:
             self.status = self.formErrorsMessage
             return
+
         self.applyChanges(data)
         self.status = "Changes saved."
 
@@ -50,7 +51,7 @@ class UserGroupShiftControlPanel(RegistryEditForm):
         super().handleCancel(self, action)
 
     @button.buttonAndHandler(('Add to Group'), name='Add to Group')
-    def handleTest(self, action):
+    def handleAdd(self, action):
         data, errors = self.extractData()
         if errors:
             self.status = self.formErrorsMessage
@@ -58,18 +59,20 @@ class UserGroupShiftControlPanel(RegistryEditForm):
 
         selected_group = data['group']
         selected_users = data['users']
+        if selected_group == None:
+            self.status = "Please select a group"
+        else:
+            # Fetch the Plone users and groups tool
+            # portal = api.portal.get()
+            pt = api.portal.get_tool(name='portal_groups')
 
-        # Fetch the Plone users and groups tool
-        # portal = api.portal.get()
-        pt = api.portal.get_tool(name='portal_groups')
+            # Change the group membership for each selected user
+            for user in selected_users:
+                user = api.user.get(username=user)
+                group = pt.getGroupById(selected_group)
+                group.addMember(user.getId())
 
-        # Change the group membership for each selected user
-        for user in selected_users:
-            user = api.user.get(username=user)
-            group = pt.getGroupById(selected_group)
-            group.addMember(user.getId())
-
-        self.status = "Selected users 'group membership has been updated."
+            self.status = "Selected users group membership has been updated"
 
     @button.buttonAndHandler(('Remove'), name='remove')
     def handleRemove(self, action):
