@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='cybro.usergroup.shift',
-    version='1.0a1',
+    version='1.0.0',
     description="an addon which can change multiple user's to one group",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
